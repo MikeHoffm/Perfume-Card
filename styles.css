@@ -1,0 +1,131 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Main Card Styling */
+.main-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+/* Left Side of Card - Image*/
+.left-card {
+    display: flex;
+    width: 300px;
+    height: auto;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   border-top-left-radius: 16px;
+   border-bottom-left-radius: 16px;
+}
+
+/* Right Side of Card- Info*/
+.card-info {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+
+h4 {
+    display: flex;
+    align-items: center;
+}
+
+h3, p, h4 {
+    color: hsl(228, 12%, 48%);
+    font-weight: normal;
+}
+
+.prices-container {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.listed-price {
+    color:hsl(158, 36%, 37%);
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 100px;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+/* Responsive Design - Mobile Friendly */
+@media (max-width:768px) {
+    .main-card {
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+
+    .left-card {
+    flex: 1;
+    display: flex;
+    width: 320px;
+    height: 200px;
+}
+
+img {
+    max-width: 100%;
+    flex-grow: 1;
+    height: inherit;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0;
+ }
+ 
+.card-info {
+    flex: 1;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 0;
+}
+} 
+
+
+/* FOOTER */
+.attribution {
+    text-align: center;
+    margin-top: 5%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: firebrick;
+}
